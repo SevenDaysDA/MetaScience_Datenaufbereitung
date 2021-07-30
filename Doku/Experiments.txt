@@ -1,0 +1,37 @@
+Vorstellen der Ergebnisse von XMoverScore
+
+
+As discussed in the previous chapter we run the experiments.
+
+(Method)
+To evaluate XMoverScore for different transformer models and their performance, we spectate their corresponding score, time consumption and memory usage for the plain score and the suggested remapping score established by the additional language model. In our case we uniformally used "GPT2".
+The scores were evaluated on a pre-chosen selection of language pair for the Machine Translation task. The language pairs are ["cs-en", "de-en", "fi-en", "lv-en", "ru-en", "tr-en", "zh-en"] . From here on abbreviated without the "en" suffix. 
+
+
+
+(Experiments)
+The results for the machine translation task into english are presented in a starplot in figure XX. The pearson correlation value is calculated with the XMoverScore and a human_score.
+
+% Description
+	% Allgemeiner Score
+The first impression we get that all transformers perform similiarly for the language pairs with the exception of DistilmBERT. { This observation would suggest the asumption that the languages are not supported. However the model description suggests otherwise. } -> (umschreiben, kürzer) 
+Further we can see that XLM-Roberta-multilingual performs the best with quite a high gap in all language pairs. TinymBERT seems to achieve the same performance as its predecessor "mBERT" for "fi" , "lv" and "zh", while the other perform weaker.
+
+	% Score + LM
+In figure XX we can see a different starplot with the performance scores of the transformers coupled with a additional language model. The scores for each language pair behave similair for each language pair {}-> (Ergänze Abweichung der language pairs) . The attentive reader will notice that adding a additional Language Model causes a significant performance increase. Also models, which did not behave uniformly for all lps, do now. XLM-RoBERTa still outperforms the other transformers.
+
+	% Comparison graph
+In figure XX the performance change from adding an additional lm is shown. We can see that all models have profited significantly from the addition LM with DistilmBERT the most. While XLM-DistimBERT seems quite unaffected.
+% Einheitliche Farben für Modelle!!
+	% All models 
+% Änderungsideen für Abbildung XX:  Y-Skala in %, Namen für LM-Score ändern in XMover+LM-Score
+In figure XX the performance related attributes in relation to mBERT are shown. The horizontal red line indicates the baseline for mBERT. The only model which outperforms mBERT is XLM-RoBERTa.
+
+
+% Discussion
+
+There could be different reasons why the model seems to persist certain languages. [Gute Frage, keine Ahnung]
+
+
+
+

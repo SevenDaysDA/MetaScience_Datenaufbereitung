@@ -1,0 +1,15 @@
+[10] Long Range Arena: A Benchmark for Efficient Transformers
+
+Problem: Transformers do not scale very well to long sequence lengths largely because of quadratic self-attention complexity. That restricts their application to domains requiring longer sequence lengths
+Efficient Metric for Transformer models
+
+Goal: To compare efficient Transformer variants with each other
+
+Used criterias for measuring the performance:
+	- Long ListOps
+	- Byte-Level Text Classification
+	- Byte-Level Document Retrieval
+	- 
+
+General questions:
+What does 35% in performance for ListOps mean? Does it mean it performs worse than random?
