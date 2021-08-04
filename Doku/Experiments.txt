@@ -29,9 +29,5 @@ In figure XX the performance related attributes in relation to mBERT are shown. 
 
 
 % Discussion
-
 There could be different reasons why the model seems to persist certain languages. [Gute Frage, keine Ahnung]
-
-
-
 
